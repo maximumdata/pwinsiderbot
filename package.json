@@ -1,6 +1,6 @@
 {
   "name": "pwinsiderbot",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "a reddit bot for squaredcircle to post the contents of a pwinsider article as a comment",
   "main": "index.js",
   "scripts": {
