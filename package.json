@@ -1,11 +1,11 @@
 {
   "name": "pwinsiderbot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a reddit bot for squaredcircle to post the contents of a pwinsider article as a comment",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "nodemon --exec babel-node src/index.js",
+    "start": "NODE_ENV=prod nodemon --exec babel-node src/index.js",
+    "dev": "NODE_ENV=dev nodemon --exec babel-node src/index.js",
     "test": "mocha --require @babel/register 'tests/**/**spec.js'"
   },
   "repository": {
@@ -25,7 +25,8 @@
   "homepage": "https://github.com/maximumdata/pwinsiderbot#readme",
   "dependencies": {
     "axios": "^0.19.1",
-    "cheerio": "^1.0.0-rc.3"
+    "cheerio": "^1.0.0-rc.3",
+    "log4js": "^6.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
