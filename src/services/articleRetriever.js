@@ -1,6 +1,8 @@
 import axios from 'axios';
 import isValidLink from '../utils/isValidLink';
-import logger from '../config';
+import { ConfigLogger } from '../config';
+
+const logger = new ConfigLogger('articleRetriever');
 
 export default async function articleRetriever(link) {
   if (!isValidLink(link)) {
